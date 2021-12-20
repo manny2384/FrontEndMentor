@@ -14,7 +14,7 @@ function App() {
           <div className="innerinnerCard">
             
             <div className="nftImage"> 
-              <img id="nft" alt="nft Image" src={equilibrium} /> 
+              <img id="nft" alt="nftImage" src={equilibrium} /> 
               <a><img id="eye" src={view} alt="eye" /></a>
             </div>
 
