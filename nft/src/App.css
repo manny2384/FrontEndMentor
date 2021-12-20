@@ -30,6 +30,7 @@ a:hover{
   height: 523px;
   margin: auto;
   border-radius: 15px;
+  padding-top: 24px;
 }
 
 .innerCard{
@@ -112,4 +113,15 @@ a:hover{
   justify-content: left;
   align-items: center;
   font-size: 15px;
+}
+
+@media only screen and (min-width: 500px) {
+  .card{
+    width: 350px;
+    height: 596px;
+  }
+
+  .specs span, .author{
+    font-size: 16px;
+  }
 }
