@@ -7,7 +7,7 @@ import view from "./images/icon-view.svg";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <div className="card">
         <div className="innerCard">
           
@@ -15,10 +15,10 @@ function App() {
             
             <div className="nftImage"> 
               <img id="nft" alt="nftImage" src={equilibrium} /> 
-              <a href="#"><img id="eye" src={view} alt="eye" /></a>
+              <a href="#home"><img id="eye" src={view} alt="eye" /></a>
             </div>
 
-            <div className="tag"> <a href="#"> Equilibrium #3429 </a> </div>
+            <div className="tag"> <a href="#home"> Equilibrium #3429 </a> </div>
 
             <div className="desc"> Our Equilibrium collection promotes balance and calm. </div>
 
@@ -28,7 +28,7 @@ function App() {
             </div>
 
 
-            <div className="author"> <img src={avatar} alt="avatar" /> <p> Creation of <a href="#">Jules Wyvern</a> </p> </div>
+            <div className="author"> <img src={avatar} alt="avatar" /> <p> Creation of <a href="#home">Jules Wyvern</a> </p> </div>
           </div>
 
         </div>
