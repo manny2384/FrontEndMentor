@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body, .App{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-section{
+  position: relative;
+}
+.hero-description{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+@media only screen and (min-width: 700px){
+  .hero-description{
+    position: absolute;
+    top: 0;
+    width: 500px;
+  }
+}
+
+.hero-description div{
+
+}
+
+.big-word{
+  font-family: Big Shoulders Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 55px;
+  letter-spacing: 0px;
+  text-align: left;  
+
+}
+
+.small-word{
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#location-btn{
+  height: 72px;
+  width: 260px;
+  display: flex;
+}
+#location-btn button{
+  width: 204px;
+  background: black;
+  border: none;
+  font-family: Big Shoulders Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6363637447357178px;
+  text-align: center;
+  color: white; 
+
+}
+#location-btn span{
+  width: 56px;
+  height: 100%;
+  background: #D5966C;
+  display: grid;
+  align-items: center;
+}
+#location-btn span img{
+  margin: auto;
+}
+
+.mid-section{
+  padding: 4rem 1rem 5rem;
+}
+.mid-section .top{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+@media only screen and (min-width: 700px){
+  .mid-section .top{
+    flex-direction: row;
+  }
+}
+
+.mid-section .intro p{
+  padding: 1rem 0;
+
+}
+
+.mid-section .intro .small-word{
+
+}
+
+.mid-section .bottom{
+  display: flex;
+  flex-direction: column;
+}
+.bottom picture{
+  padding: 1rem 0;
+}
+.inspire{
+  background: #151515;
+  color: white;
+  text-align: left;
+}
+.inspire p{
+  padding-left: 1rem; padding-right: 1rem;
+}
+@media only screen and (min-width: 700px){
+  .mid-section .bottom{
+    flex-direction: row;
+  }
+}
+
+.footer{
+  background: #151515;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.footer .big-word{
+  font-size: 20px;
+  width: 110px;
+  line-height: 1;
+}
+.footer .small-word{
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer p, .footer ul{
+  padding: 1rem 1rem;
+}
+.footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.footer ul li{
+
+  cursor: pointer;
+}
+.footer ul li:hover{
+  background-color: orange;
+}
+.footer img{
+  color: orange;
+}
