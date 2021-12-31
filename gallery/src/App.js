@@ -2,21 +2,21 @@ import grid1 from './assets/desktop/image-grid-1.jpg';
 import grid2 from './assets/desktop/image-grid-2.jpg';
 import grid3 from './assets/desktop/image-grid-3.jpg';
 import hero from './assets/desktop/image-hero.jpg';
-import map from './assets/desktop/image-map.png';
+//import map from './assets/desktop/image-map.png';
 
 import tabgrid1 from './assets/tablet/image-grid-1.jpg';
 import tabgrid2 from './assets/tablet/image-grid-2.jpg';
 import tabgrid3 from './assets/tablet/image-grid-3.jpg';
 import tabhero from './assets/tablet/image-hero.jpg';
-import tabmap from './assets/tablet/image-map.png';
+//import tabmap from './assets/tablet/image-map.png';
 
 import mobgrid1 from './assets/mobile/image-grid-1.jpg';
 import mobgrid2 from './assets/mobile/image-grid-2.jpg';
 import mobgrid3 from './assets/mobile/image-grid-3.jpg';
 import mobhero from './assets/mobile/image-hero.jpg';
-import mobmap from './assets/mobile/image-map.png';
+//import mobmap from './assets/mobile/image-map.png';
 
-import leftArrow from './assets/icon-arrow-left.svg';
+//import leftArrow from './assets/icon-arrow-left.svg';
 import rightArrow from './assets/icon-arrow-right.svg';
 
 import facebook from './assets/icon-facebook.svg';
