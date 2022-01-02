@@ -16,17 +16,6 @@ html, body, .App{
   flex-direction: column;
   padding: 2rem 1rem;
 }
-@media only screen and (min-width: 700px){
-  .hero-description{
-    position: absolute;
-    top: 0;
-    width: 500px;
-  }
-}
-
-.hero-description div{
-
-}
 
 .big-word{
   font-family: Big Shoulders Display;
@@ -49,6 +38,37 @@ html, body, .App{
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.hero-description .small-word >span{
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 376px){
+  .hero-section{
+    width: 375px;
+    margin: auto;
+    padding-left: 0; padding-right: 0;
+    
+  }
+
+}
+
+@media only screen and (min-width: 700px){
+  .hero-section{
+    margin: 0;
+    width: 100%;
+  }
+  .hero-description{
+    position: absolute;
+    left: 40%;
+    width: 350px;
+    top: 20%;
+  }
+  .hero-description .small-word>span{
+    padding: 2rem 0;
+  }
+}
+
 #location-btn{
   height: 72px;
   width: 260px;
@@ -79,8 +99,11 @@ html, body, .App{
   margin: auto;
 }
 
+ 
 .mid-section{
-  padding: 4rem 1rem 5rem;
+  padding: 4rem 0 5rem;
+  margin: auto;
+  width: 343px;
 }
 .mid-section .top{
   display: flex;
@@ -88,18 +111,8 @@ html, body, .App{
 
 }
 
-@media only screen and (min-width: 700px){
-  .mid-section .top{
-    flex-direction: row;
-  }
-}
-
 .mid-section .intro p{
   padding: 1rem 0;
-
-}
-
-.mid-section .intro .small-word{
 
 }
 
@@ -107,13 +120,56 @@ html, body, .App{
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 700px){
+  .mid-section{
+    width: 690px;
+    margin: 0 auto;
+    padding-right: 0; padding-left: 0;
+  }
+
+  .mid-section .top{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mid-section .top .intro{
+    width: 300px;
+    padding-right: 1rem;
+  }
+}
+
 .bottom picture{
   padding: 1rem 0;
+}
+
+@media only screen and (min-width: 700px){
+  .bottom{
+    position: relative;
+  }
+  .bottom picture{
+    padding: 0;
+  
+  }
+
+  .bottom >picture{
+    height: 720px;
+  }
+  .bottom-half{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-half{
+    width: 280px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
 }
 .inspire{
   background: #151515;
   color: white;
   text-align: left;
+  flex-grow: 1;
 }
 .inspire p{
   padding-left: 1rem; padding-right: 1rem;
@@ -122,6 +178,7 @@ html, body, .App{
   .mid-section .bottom{
     flex-direction: row;
   }
+
 }
 
 .footer{
@@ -139,6 +196,16 @@ html, body, .App{
 .footer .small-word{
   font-size: 16px;
   line-height: 26px;
+}
+@media only screen and (min-width: 700px){
+  .footer{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer .small-word{
+    width: 500px;
+  }
 }
 .footer p, .footer ul{
   padding: 1rem 1rem;

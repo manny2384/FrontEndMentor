@@ -36,9 +36,9 @@ function App() {
 
       <div className="hero-section">
         <picture>
-          <source media="(max-width:465px)" srcSet={mobhero} />
-          <source media="(max-width:700px)" srcSet={tabhero} />
-          <img src={hero} alt="Flowers" />
+          <source media="(min-width:1000px)" srcSet={hero} />
+          <source media="(min-width:700px)" srcSet={tabhero} />  
+          <img srcSet={mobhero} alt="Flowers" />
         </picture> 
 
         <div className="hero-description">
@@ -49,7 +49,7 @@ function App() {
 
           <div className="small-word">
 
-            <span style={{"padding":"1rem 0"}}>   
+            <span>   
                 The arts in the collection of the Modern Art Gallery all started 
                 from a spark of inspiration. Will these pieces inspire you? Visit 
                 us and find out. 
@@ -76,9 +76,9 @@ function App() {
           </div>
 
           <picture>
-            <source media="(max-width:465px)" srcset={mobgrid1} />
-            <source media="(max-width:700px)" srcset={tabgrid1} />
-            <img src={grid1} alt="Flowers" />
+            <source media="(min-width:1000px)" srcSet={grid1} />
+            <source media="(min-width:700px)" srcSet={tabgrid1} />
+            <img srcSet={mobgrid1} alt="Flowers" />
           </picture>
 
         </div>
@@ -86,17 +86,17 @@ function App() {
         <div className="bottom">
 
           <picture>
-            <source media="(max-width:465px)" srcset={mobgrid2} />
-            <source media="(max-width:700px)" srcset={tabgrid2} />
-            <img src={grid2} alt="Flowers" />
+            <source media="(min-width:1000px)" srcSet={grid2} />
+            <source media="(min-width:700px)" srcSet={tabgrid2} />
+            <img srcSet={mobgrid2} alt="Flowers" />
           </picture> 
 
-          <div>
+          <div className="bottom-half">
 
             <picture>
-              <source media="(max-width:465px)" srcset={mobgrid3} />
-              <source media="(max-width:700px)" srcset={tabgrid3} />
-              <img src={grid3} alt="Flowers" />
+              <source media="(min-width:1000px)" srcSet={grid3} />
+              <source media="(min-width:700px)" srcSet={tabgrid3} />
+              <img srcSet={mobgrid3} alt="Flowers" />
             </picture> 
 
             <div className="inspire">
