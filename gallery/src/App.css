@@ -17,6 +17,13 @@ html, body, .App{
   padding: 2rem 1rem;
 }
 
+.black-wall{
+  display: none;
+  width: 500px;
+  height: 800px;
+  background: #151515;
+}
+
 .big-word{
   font-family: Big Shoulders Display;
   font-size: 60px;
@@ -43,31 +50,6 @@ html, body, .App{
   padding: 1rem 0;
 }
 
-@media only screen and (min-width: 376px){
-  .hero-section{
-    width: 375px;
-    margin: auto;
-    padding-left: 0; padding-right: 0;
-    
-  }
-
-}
-
-@media only screen and (min-width: 700px){
-  .hero-section{
-    margin: 0;
-    width: 100%;
-  }
-  .hero-description{
-    position: absolute;
-    left: 40%;
-    width: 350px;
-    top: 20%;
-  }
-  .hero-description .small-word>span{
-    padding: 2rem 0;
-  }
-}
 
 #location-btn{
   height: 72px;
@@ -98,7 +80,54 @@ html, body, .App{
 #location-btn span img{
   margin: auto;
 }
+@media only screen and (min-width: 376px){
+  .hero-section{
+    width: 375px;
+    margin: auto;
+    padding-left: 0; padding-right: 0;
+    
+  }
 
+}
+
+@media only screen and (min-width: 700px){
+  .hero-section{
+    margin: 0;
+    width: 100%;
+  }
+  .hero-description{
+    position: absolute;
+    left: 40%;
+    width: 350px;
+    top: 20%;
+  }
+  .hero-description .small-word>span{
+    padding: 2rem 0;
+  }
+}
+@media only screen and (min-width: 1150px){
+  .hero-section{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  .hero-description{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77%;
+    left: 0;
+  }
+
+  .hero-description .small-word{
+    width: 350px;
+  }
+
+  .black-wall{
+    display: inline-block;
+    flex-grow: 0.4;
+  }
+}
  
 .mid-section{
   padding: 4rem 0 5rem;
@@ -136,6 +165,15 @@ html, body, .App{
     padding-right: 1rem;
   }
 }
+@media only screen and (min-width: 1150px){
+  .mid-section{
+    width: 1110px;
+  }
+  .mid-section .bottom .bottom-half{
+    width: 445px;
+  }
+}
+
 
 .bottom picture{
   padding: 1rem 0;
@@ -197,18 +235,8 @@ html, body, .App{
   font-size: 16px;
   line-height: 26px;
 }
-@media only screen and (min-width: 700px){
-  .footer{
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .footer .small-word{
-    width: 500px;
-  }
-}
 .footer p, .footer ul{
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 .footer ul{
   list-style: none;
@@ -225,4 +253,31 @@ html, body, .App{
 }
 .footer img{
   color: orange;
+}
+@media only screen and (min-width: 700px){
+  .footer{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 690px;
+    padding: 0 calc(calc(100% - 690px)/2);
+  }
+
+  .footer .small-word{
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1150px){
+  .footer{
+    width: 1110px;
+    padding: 0 calc(calc(100% - 1110px)/2);
+    
+  }
+  .footer .small-word{
+    font-size: 18px;
+    padding-left: 0; padding-right: 0;
+  }
+  .footer .big-word{
+    font-size: 26px;
+    padding-left: 0; padding-right: 0;
+  }
 }

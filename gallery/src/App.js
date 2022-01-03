@@ -35,6 +35,7 @@ function App() {
 
 
       <div className="hero-section">
+        <div className="black-wall"></div>
         <picture>
           <source media="(min-width:1000px)" srcSet={hero} />
           <source media="(min-width:700px)" srcSet={tabhero} />  
@@ -76,7 +77,7 @@ function App() {
           </div>
 
           <picture>
-            <source media="(min-width:1000px)" srcSet={grid1} />
+            <source media="(min-width:1150px)" srcSet={grid1} />
             <source media="(min-width:700px)" srcSet={tabgrid1} />
             <img srcSet={mobgrid1} alt="Flowers" />
           </picture>
@@ -86,7 +87,7 @@ function App() {
         <div className="bottom">
 
           <picture>
-            <source media="(min-width:1000px)" srcSet={grid2} />
+            <source media="(min-width:1150px)" srcSet={grid2} />
             <source media="(min-width:700px)" srcSet={tabgrid2} />
             <img srcSet={mobgrid2} alt="Flowers" />
           </picture> 
@@ -94,7 +95,7 @@ function App() {
           <div className="bottom-half">
 
             <picture>
-              <source media="(min-width:1000px)" srcSet={grid3} />
+              <source media="(min-width:1150px)" srcSet={grid3} />
               <source media="(min-width:700px)" srcSet={tabgrid3} />
               <img srcSet={mobgrid3} alt="Flowers" />
             </picture> 
