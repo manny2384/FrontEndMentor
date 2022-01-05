@@ -45,7 +45,7 @@ function App() {
       {!page &&
           <div id="showGrid">
 
-            <span>
+            <span className="btn" id="back-btn">
               <button onClick={()=>setPage(!page)}><img src={leftArrow} alt="left Arrow" /></button>
               <span> BACK TO HOME </span>
             </span>
@@ -100,10 +100,10 @@ function App() {
                     us and find out. 
                 </span>
 
-                <span id="location-btn"> 
-                  <button> OUR LOCATION </button> 
-                  <span onClick={() => setPage(!page)}><img src={rightArrow} alt="right Arrow" /></span> 
-                </span>
+                <div className="btn" id="forward-btn"> 
+                  <span> OUR LOCATION </span> 
+                  <button onClick={() => setPage(!page)}><img src={rightArrow} alt="right Arrow" /></button> 
+                </div>
 
               </div>
 
