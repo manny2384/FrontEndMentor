@@ -85,7 +85,6 @@ html, body, .App{
     width: 375px;
     margin: auto;
     padding-left: 0; padding-right: 0;
-    
   }
 
 }
@@ -111,14 +110,16 @@ html, body, .App{
     justify-content: flex-start;
 
   }
-
+  
   .hero-description{
     flex-direction: row;
     justify-content: space-between;
-    width: 77%;
-    left: 0;
+    width: min(60%, 1100px);
+    left: 30%;
   }
-
+  .hero-description .big-word{
+    width: 300px;
+  }
   .hero-description .small-word{
     width: 350px;
   }
@@ -259,17 +260,23 @@ html, body, .App{
     flex-direction: row;
     justify-content: space-between;
     width: 690px;
-    padding: 0 calc(calc(100% - 690px)/2);
+    padding: 56px calc(calc(100% - 690px)/2);
+    margin: auto;
+
   }
 
   .footer .small-word{
     width: 500px;
   }
+
+  .footer ul{
+    padding-right: 0;
+  }
 }
 @media only screen and (min-width: 1150px){
   .footer{
     width: 1110px;
-    padding: 0 calc(calc(100% - 1110px)/2);
+    padding: 56px calc(calc(100% - 1110px)/2);
     
   }
   .footer .small-word{
@@ -279,5 +286,63 @@ html, body, .App{
   .footer .big-word{
     font-size: 26px;
     padding-left: 0; padding-right: 0;
+  }
+}
+
+
+.location{
+  background: #151515;
+  color: white;
+  padding: 0 1rem;
+  height: 493px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.location #big-loc{
+  font-size: 50px;
+  font-family: 'Big Shoulders Display';
+}
+.location #street{
+  font-size: 32px;
+  font-family: 'Big Shoulders Display';
+  color: #D5966C;
+}
+
+.location .loc-description{
+  display: flex;
+  flex-direction: column;
+  height: 296px;
+  justify-content: space-between;
+  font-family: 'Outfit';
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 700px){
+  .location{
+    flex-direction: row;
+    height: 375px;
+    padding: 88px 1rem 80px;
+    justify-content: space-between;
+  }
+  .location #big-loc{
+    width: 223px;
+  }
+  .location .loc-description{
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .location #big-loc{
+    width: 350px;
+    font-size: 70px;
+  }
+  .location #steet{
+    font-size: 36px;
+  }
+  .location .loc-description{
+    font-size: 22px;
+    width: 540px;
   }
 }
