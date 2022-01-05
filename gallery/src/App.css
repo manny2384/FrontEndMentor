@@ -228,7 +228,7 @@ html, body, .App{
 .footer img{
   color: orange;
 }
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 800px){
   .footer{
     flex-direction: row;
     justify-content: space-between;
