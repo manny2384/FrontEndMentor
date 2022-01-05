@@ -50,11 +50,13 @@ function App() {
               <span> BACK TO HOME </span>
             </span>
 
+            <div style={{'width':'100%', 'display':'grid'}}>
             <picture>
-                  <source media="(min-width:1000px)" srcSet={map} />
-                  <source media="(min-width:700px)" srcSet={tabmap} />  
+                  <source media="(min-width:1440px)" srcSet={map} />
+                  <source media="(min-width:768px)" srcSet={tabmap} />  
                   <img srcSet={mobmap} alt="Flowers" />
             </picture> 
+            </div>
             
             <div className="location"> 
               <div id="big-loc"> OUR LOCATION </div>

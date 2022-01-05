@@ -62,7 +62,6 @@ html, body, .App{
   }
 
 }
-
 @media only screen and (min-width: 700px){
   .hero-section{
     margin: 0;
@@ -265,6 +264,22 @@ html, body, .App{
 
 #showGrid{
   position: relative;
+  background: #151515;
+  width: 100%;
+}
+#showGrid picture{
+  width: 375px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px){
+  #showGrid picture{
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 1440px){
+  #showGrid picture{
+    width: 1440px;
+  }
 }
 .location{
   background: #151515;
@@ -299,7 +314,8 @@ html, body, .App{
   .location{
     flex-direction: row;
     height: 375px;
-    padding: 88px 1rem 80px;
+    padding: 88px calc(calc(100% - 690px)/2) 80px;
+    width: 690px;
     justify-content: space-between;
   }
   .location #big-loc{
@@ -309,7 +325,11 @@ html, body, .App{
     width: 400px;
   }
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1150px){
+  .location{
+    width: 1110px;
+    padding: 88px calc(calc(100% - 1110px)/2) 80px;
+  }
   .location #big-loc{
     width: 350px;
     font-size: 70px;
