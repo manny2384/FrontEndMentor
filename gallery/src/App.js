@@ -45,8 +45,8 @@ function App() {
       {!page &&
           <div id="showGrid">
 
-            <span className="btn" id="back-btn">
-              <button onClick={()=>setPage(!page)}><img src={leftArrow} alt="left Arrow" /></button>
+            <span className="btn" id="back-btn" onClick={()=>setPage(!page)}>
+              <button><img src={leftArrow} alt="left Arrow" /></button>
               <span> BACK TO HOME </span>
             </span>
 
@@ -85,7 +85,7 @@ function App() {
             <picture>
               <source media="(min-width:1000px)" srcSet={hero} />
               <source media="(min-width:700px)" srcSet={tabhero} />  
-              <img srcSet={mobhero} alt="Flowers" />
+              <img srcSet={mobhero} alt="hero-img" />
             </picture> 
 
             <div className="hero-description">
@@ -102,9 +102,9 @@ function App() {
                     us and find out. 
                 </span>
 
-                <div className="btn" id="forward-btn"> 
+                <div className="btn" id="forward-btn" onClick={() => setPage(!page)}> 
                   <span> OUR LOCATION </span> 
-                  <button onClick={() => setPage(!page)}><img src={rightArrow} alt="right Arrow" /></button> 
+                  <button><img src={rightArrow} alt="right Arrow" /></button> 
                 </div>
 
               </div>

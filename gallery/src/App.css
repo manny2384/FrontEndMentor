@@ -19,7 +19,7 @@ html, body, .App{
 
 .black-wall{
   display: none;
-  width: 500px;
+  width: 200px;
   height: 800px;
   background: #151515;
 }
@@ -359,6 +359,7 @@ html, body, .App{
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
+  cursor: pointer;
 }
 .btn button{
   height: 100%;
